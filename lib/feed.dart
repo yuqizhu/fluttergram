@@ -81,7 +81,7 @@ class _Feed extends State<Feed> with AutomaticKeepAliveClientMixin<Feed> {
 
     String userId = googleSignIn.currentUser.id.toString();
     var url =
-        'https://us-central1-cloudfunction123yuqi.cloudfunctions.net/getFeed' + userId;
+        'https://us-central1-cloudfunction123yuqi.cloudfunctions.net/getFeed/' + userId;
     var httpClient = HttpClient();
 
     List<ImagePost> listOfPosts;
